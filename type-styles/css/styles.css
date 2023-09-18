@@ -1,0 +1,87 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+}
+h1 {
+  margin-top: 40px;
+  font-size: 3rem;
+  margin-bottom: 0;
+  background-color:rgb(195, 218, 197);
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+h1.top {
+margin-top: 0;
+font-size: 24px;
+padding-bottom: 30px;
+margin-bottom: 0px;
+}
+h2,h6{
+  margin-left: 30px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  color:rgb(17, 132, 26);
+}
+body {
+  margin-left: 60px;
+  margin-right: 60px;
+  background-color: gainsboro;
+}
+p.font-weight {
+  font-weight: normal;
+}
+p.font-weight2 {
+  font-weight: bold;
+}
+section {
+  background-color: white;
+}
+p {
+  margin-left:30px;
+  margin-top: 10px;
+  margin-bottom:20px;
+}
+p.italic {
+  font-style: italic;
+}
+p.letterspace1 {
+  letter-spacing: .3em;
+}
+p.letterspacing2 {
+  letter-spacing: -0.06em;
+}
+hr {
+  margin:0px;
+}
+footer {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+p.uppercase {
+  text-transform: uppercase;
+}
+p.lowercase {
+  text-transform: lowercase;
+}
+p.capitalize {
+  text-transform: capitalize;
+}
+p.line {
+  text-decoration: line-through;
+}
+p.underline {
+  text-decoration: underline;
+}
+p.overline {
+  text-decoration: overline;
+}
