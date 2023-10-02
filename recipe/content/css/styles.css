@@ -1,0 +1,101 @@
+html {
+    background-color: lemonchiffon
+}
+h1.heading {
+    font-family: gyst-variable, sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+h1.heading2 {
+    font-family: gyst-variable, sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    margin:0px;
+}
+h1,h2 {
+    font-family: gyst-variable, sans-serif;
+}
+a {
+    color: black;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 100px;
+}
+hr {
+    border-top: 3px solid black;
+    border-bottom: solid black;
+}
+p.description {
+    margin-top: 10px;
+    padding-left: 220px;
+    padding-right:220px;
+    text-align: center;
+}
+p.directions {
+    padding-right:200px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+footer {
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    opacity: 0.5;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.image-container a {
+    text-decoration: none;
+}
+.blurb {
+    background-color: white;
+}
