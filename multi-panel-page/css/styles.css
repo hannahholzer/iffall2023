@@ -1,0 +1,108 @@
+html {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+header {
+    text-align: center;
+    background-image: url("../images/khanh-lam-UaY-GVF8CPY-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position: left;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 30px;
+    line-height:1.1;
+}
+h1,h2,h3, p {
+    margin:0;
+}
+.column_container {
+    width:960px;
+    margin: auto;
+}
+header .column_container {
+    padding-top:152px;
+    padding-bottom: 188px;
+}
+h3 {
+    text-align: center;
+    font-size:40px;
+    padding-bottom: 33px;
+}
+section .column_container {
+    padding-top: 39px;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+.intro_text p {
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+section.intro_text {
+    background-color: lightblue;
+}
+img.intro_text_image {
+margin-left:40px;
+margin-bottom: 26px;
+border: 2px solid whitesmoke;
+}
+li > img {
+    width:200px;
+    height: 150px;
+}
+li > div {
+display: block;
+}
+.grid-using-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 23px 0px;
+    padding: 0;
+    margin: 0;
+}
+.grid-using-grid li {
+    display: inline-flex;
+}
+.grid-using-grid div {
+    flex: 1;
+    padding-left: 12px;
+    padding-right: 47px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.grid-using-grid p {
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    padding-top: 0px;
+}
+section.image_grid {
+    background-color: lightseagreen;
+    padding-bottom: 28px;
+}
+p.bottom_paragraph {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.4;
+    width: 704px;
+    margin: auto;
+}
+.more_text {
+    background-color:beige;
+    padding-bottom: 60px;
+}
+footer {
+padding-top: 40px;
+  font-size: 18px;
+  background-color: whitesmoke;
+  padding-bottom: 40px;
+}
+.image_grid {
+    color:white;
+}
