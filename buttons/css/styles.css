@@ -1,0 +1,324 @@
+a#btn_oldnavy {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #003763;
+    color: #fff;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+    text-transform: uppercase;
+}
+
+a#btn_oldnavy:hover {
+    background-color: #FFD700;
+    color: #003763;
+    transform: scale(1.1);
+}
+
+#cocacola-button {
+    margin-top: 20px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+#cocacola-button::before, #cocacola-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cocacola-button::before {
+    background-image: url('https://clipart-library.com/images_k/coca-cola-transparent-logo/coca-cola-transparent-logo-1.png');
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+#cocacola-button:hover::after {
+    background-image: url('https://clipart-library.com/images_k/coca-cola-bottle-silhouette/coca-cola-bottle-silhouette-5.png');
+    z-index: 1;
+    opacity: 0.8;
+}
+
+#cocacola-button:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+a#btn_lyft {
+    display: block;
+    width: 130px;
+    height: 110px;
+    box-sizing: border-box;
+    padding-top: 2px;
+    margin: auto;
+    margin-top: 60px;
+    background-color: #ff00bf;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 80px;
+    font-weight: bold;
+    border-radius: 80px;
+}
+
+a#btn_lyft:hover {
+    background-color: #01111F;
+    transition: 1s;
+}
+
+a#btn_tesla {
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(https://imgs.search.brave.com/TFmZPGlr1RrxMytl8dVZlExvFKnqfjTtZcS3rhtbUT0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9kZXNp/Z25icm8uY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzL1Rl/c2xhX0ZvbnQtYW5k/LWNvbG9yLnBuZw);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 70px;
+    transition: transform 0.2s, filter 0.2s, border-color 0.2s;
+    position: relative;
+}
+
+a#btn_tesla:hover {
+    transform: scale(1.1);
+    filter: brightness(90%);
+    border-color: #C8102E;
+    animation: hoverAnimation 0.7s ease infinite;
+}
+
+@keyframes hoverAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+a#btn_color_run {
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #7fd82b;
+    background-image: linear-gradient(319deg, #7fd82b 0%, #ef4063 37%, #e557c6 100%);
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    animation: none;
+    line-height: 50px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+a#btn_color_run:hover {
+    transform: scale(1.10);
+    filter: brightness(90%);
+    animation: shake 0.5s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 0); }
+    40% { transform: translate(2px, 0); }
+    60% { transform: translate(-2px, 0); }
+    80% { transform: translate(2px, 0); }
+    100% { transform: translate(0); }
+}
+
+#fitbit-button {
+    display: block;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 80px;
+    background: url('https://1000logos.net/wp-content/uploads/2017/07/Fitbit-Emblem-768x624.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 0.5s ease;
+}
+
+#fitbit-button:hover {
+    background-image: url('https://1000logos.net/wp-content/uploads/2017/07/Font-Fitbit-Logo-768x371.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+#nike-button {
+    display: inline-block;
+    width: 250px;
+    height: 150px;
+    font-size: 80px;
+    margin-top: 55px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-style: bold;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    text-decoration: none;
+    background:black;
+    transition: transform 0.3s ease-in, background 0.3s ease-in;
+    overflow: hidden;
+    position: relative;
+    line-height: 150px;
+}
+
+#nike-button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://imgs.search.brave.com/43IWVMpe5skJ_G_Ecvr0HgswNOGa6gxzvvCGDVREd60/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Q1L2M3/LzJjL2Q1YzcyY2Ix/ODQ5N2QxZWE2NWYy/OWYwODU3YThjNzYw/LnBuZw');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    
+}
+
+#nike-button:hover {
+    transform: scale(1.05);
+    background: black;
+}
+
+#nike-button:hover::before {
+    opacity: 1;
+}
+
+#facebook-button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: #1877f2;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 110px;
+    line-height: 40px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#facebook-button:hover {
+    background-color: #0e63b3;
+    transform: scale(1.05);
+}
+#facebook-button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: #1877f2;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 110px;
+    line-height: 40px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#facebook-button:hover {
+    background-color: #0e63b3;
+    transform: scale(1.05);
+}
+
+#npr-button {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-color: black;
+    color: #fff;
+    font-family: 'IrvinHeadingPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 60px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    margin-top: 100px;
+}
+
+#npr-button::before {
+    content: 'N';
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    background-color: #fb0404;
+    float: left;
+    border-radius: 5px 0 0 5px;
+}
+
+#npr-button::after {
+    content: 'R';
+    display: inline-block;
+    width: 33.33%;
+    height: 100%;
+    background-color: #6cabeb; 
+    border-radius: 0 5px 5px 0;
+    float:right;
+}
+
+#npr-button:hover {
+    letter-spacing: 3px;
+    transform: scale(1.1);
+}
+
+#michael-kors-button {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-color: #fff; 
+    color: #000; 
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+#michael-kors-button:hover {
+    background-color: #000; 
+    color: #fff; 
+}
+
