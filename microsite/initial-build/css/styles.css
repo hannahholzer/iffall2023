@@ -1,0 +1,188 @@
+section.page-title {
+    background-image:url(../images/the/2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 10%;
+    padding-left: 58%;
+    padding-bottom: 19%;
+    font-weight: bold;
+    color:white;
+    font-size:86px;
+    line-height:80%;
+    margin:0%;
+}
+section.history-top, .top-header {
+    font-weight: bold;
+    color: white;
+    font-size: 88px;
+    background-color: #0f1012;
+}
+section.history-top {
+    line-height: 69%; 
+}
+.top-header {
+    line-height: 0%;
+}
+html {
+    font-family: Helvetica;
+}
+em {
+    font-size: 32px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.sticky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#0f1012;
+    z-index: 100;
+}
+.sticky-header ul {
+    list-style: none;
+    padding: 1%;
+    margin: 0;
+    display: flex;
+}
+.sticky-header li {
+    margin: 0 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sticky-header a {
+    text-decoration: none;
+    color:white;
+}
+.rectangular-button a {
+    text-decoration: none;
+    color: #0f1012;
+}
+section.home1, section.labrador-type-list, section.char-top, section.fun-facts {
+    background-color:#0f1012;
+    color:white;
+    padding: 10%;
+    padding-top:1%;
+    padding-bottom: 3%;
+}
+.rectangular-button {
+    display: block;
+    margin-top: 30px;
+    padding: 18px;
+    background-color: white;
+    color: #0f1012;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+h1 {
+    font-weight: bold;
+    color:white;
+    font-size:40px;
+}
+  section.home1 ul, section.history-top ul, section.char-top ul, section.fun-facts ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    list-style: none;
+}
+section.labrador-type-list ul {
+    display: grid;
+    grid-gap:2%;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    list-style: none;
+}
+section.home1 ul {
+    font-size: 22px;
+    gap: 60px;
+}
+section.home1 li, section.history-top li, section.labrador-type-list li, section.char-top li, section.fun-facts li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 4%;
+}
+section.footer {
+    background-color: white;
+    color: #0f1012;
+    font-size: 14px;
+    padding-left: 10%;
+    padding-top: 1.5%;
+    padding-bottom:1%;
+}
+.image-placeholder {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+.image-placeholder:hover {
+    transform: scale(1.1);
+}
+.rectangular-button:hover {
+    background-color: yellow;
+    color: black;
+}
+header li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+a.on-this-page {
+    color: yellow;
+    font-size: 20px;
+}
+p.caption {
+    font-size: 13px;
+    font-weight: bold;
+}
+p.intro-text {
+    font-size:22px;
+    line-height: normal;
+    font-weight: normal;
+}
+section.history-2 {
+    background-color: #0f1012;
+    color: white;
+    font-size:23px;
+    line-height: normal;
+    font-weight: normal;
+    padding-left:15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+section.history-top {
+    padding-left:15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+section.char-top, section.fun-facts {
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.char-top ul, .fun-facts ul {
+    grid-gap:40px;
+}
+section.fun-facts .top-header2 {
+    line-height: 90%;
+}
+ .top-header2 {
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+    background-color: #0f1012;
+}
