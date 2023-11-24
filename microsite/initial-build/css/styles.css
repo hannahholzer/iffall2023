@@ -120,13 +120,13 @@ section.home1 ul {
     font-size: 22px;
     gap: 60px;
 }
-section.home1 li, section.history-top li, section.labrador-type-list li, section.char-top li, section.fun-facts li {
+section.home1 li, section.history-top li, section.labrador-type-list li, section.char-top li {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 4%;
+    padding: 4% 5%;
 }
 section.footer {
     background-color: #B6CBDB;
@@ -177,6 +177,46 @@ section.fun-facts .top-header2 {
     color: #0A7ACF;
     font-size: 4rem;
 }
+.top-header3 {
+    font-weight: bold;
+    color:black;
+    font-size: 100px;
+    margin-right: 2%;
+    text-align: left;
+    margin: 1% 12%;
+    padding-top:4%;
+    padding-bottom: 2%;
+}
+.fact {
+    border: 2px solid #B6CBDB;
+    border-radius: 5px;
+    padding: 2% 8%;
+    margin-bottom: 5%;
+}
+.fun-facts {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+.numbered-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.numbered-column li {
+    counter-increment: my-counter;
+    margin: 0;
+}
+.top-header2::before {
+    content:"#" counter(my-counter) "   ";
+    display: contents;
+    width: 1.5em;
+    text-align: center;
+    margin: 2%;
+    color: #B6CBDB;
+    font-weight: bold;
+}
 @media (max-width: 1000px) {
     section.page-title {
         font-size: 60px;
@@ -190,11 +230,14 @@ section.fun-facts .top-header2 {
     a.on-this-page {
         font-size: 18px;
     }
-    p.top-header{
+    p.top-header, .top-header2{
         font-size: 60px;
     }
     p.intro-text {
         font-size: 20px;
+    }
+    .top-header3 {
+        font-size: 80px;
     }
 }
 @media (max-width: 752px) {
@@ -228,11 +271,14 @@ section.fun-facts .top-header2 {
     a.on-this-page {
         font-size: 14px;
     }
-    p.top-header{
+    p.top-header, .top-header2{
         font-size: 45px;
     }
     p.intro-text {
         font-size: 18px;
+    }
+    .top-header3 {
+        font-size: 70px;
     }
 }
 @media (max-width: 550px) {
@@ -270,6 +316,9 @@ section.fun-facts .top-header2 {
     a.on-this-page {
         font-size: 12px;
     }
+    .top-header3 {
+        font-size: 60px;
+    }
 }
 @media (max-width: 395px) {
     section.page-title {
@@ -287,6 +336,9 @@ section.fun-facts .top-header2 {
     }
     a.on-this-page {
         font-size: 11px;
+    }
+    .top-header2 {
+        font-size: 37px;
     }
 }
 @media (max-width:349px) {
