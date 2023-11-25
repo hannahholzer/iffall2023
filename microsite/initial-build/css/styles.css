@@ -215,6 +215,11 @@ section.fun-facts .top-header2 {
     color: #B6CBDB;
     font-weight: bold;
 }
+@media (max-width:1700px) {
+    .image-placeholder {
+        width:70%;
+    }
+}
 @media (max-width: 1000px) {
     section.page-title {
         font-size: 60px;
@@ -237,9 +242,6 @@ section.fun-facts .top-header2 {
     .top-header3 {
         font-size: 80px;
     }
-    .away-at-smaller {
-        display: none;
-    }
     .in-at-smaller {
         display: show;
     }
@@ -260,8 +262,8 @@ section.fun-facts .top-header2 {
     .in-at-smaller {
         display: show;
     }
-    .away-at-smaller {
-        display: none;
+    .image-placeholder {
+        width:105%;
     }
 }
 @media (max-width: 648px) {
@@ -291,10 +293,10 @@ section.fun-facts .top-header2 {
         font-size: 70px;
     }
     .in-at-smaller {
-        display: none;
+        display: show;
     }
-    .away-at-smaller {
-        display: none;
+    .image-placeholder {
+        width:110%;
     }
 }
 @media (max-width: 550px) {
