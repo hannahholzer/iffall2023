@@ -92,7 +92,7 @@ body {
     margin: 0;
     padding: 0;
 }
-section.home1, section.labrador-type-list, section.char-top, section.fun-facts, section.history-top, section.history-2 {
+section {
     background-color:white;
     color:black;
     margin: 1% 12%;
@@ -166,7 +166,7 @@ section.history-2 {
     font-weight: normal;
 }
 .char-top ul, .fun-facts ul {
-    grid-gap:40px;
+    grid-gap:0px;
 }
 section.fun-facts .top-header2 {
     line-height: 90%;
@@ -181,10 +181,8 @@ section.fun-facts .top-header2 {
     font-weight: bold;
     color:black;
     font-size: 100px;
-    margin-right: 2%;
     text-align: left;
-    margin: 1% 12%;
-    padding-top:4%;
+    margin: 1%;
     padding-bottom: 2%;
 }
 .fact {
@@ -239,6 +237,12 @@ section.fun-facts .top-header2 {
     .top-header3 {
         font-size: 80px;
     }
+    .away-at-smaller {
+        display: none;
+    }
+    .in-at-smaller {
+        display: show;
+    }
 }
 @media (max-width: 752px) {
     section.page-title {
@@ -252,6 +256,12 @@ section.fun-facts .top-header2 {
     }
     a.on-this-page {
         font-size: 16px;
+    }
+    .in-at-smaller {
+        display: show;
+    }
+    .away-at-smaller {
+        display: none;
     }
 }
 @media (max-width: 648px) {
@@ -280,6 +290,12 @@ section.fun-facts .top-header2 {
     .top-header3 {
         font-size: 70px;
     }
+    .in-at-smaller {
+        display: none;
+    }
+    .away-at-smaller {
+        display: none;
+    }
 }
 @media (max-width: 550px) {
     section.page-title {
@@ -297,6 +313,12 @@ section.fun-facts .top-header2 {
     }
     a.on-this-page {
         font-size: 12px;
+    }
+    .in-at-smaller {
+        display: none;
+    }
+    .away-at-smaller {
+        display: none;
     }
 }
 @media (max-width: 450px) {
@@ -319,6 +341,15 @@ section.fun-facts .top-header2 {
     .top-header3 {
         font-size: 60px;
     }
+    .in-at-smaller {
+        display: none;
+    }
+    .away-at-smaller {
+        display: none;
+    }
+    .top-header3 {
+        font-size: 55px;
+    }
 }
 @media (max-width: 395px) {
     section.page-title {
@@ -340,6 +371,12 @@ section.fun-facts .top-header2 {
     .top-header2 {
         font-size: 37px;
     }
+    .in-at-smaller {
+        display: none;
+    }
+    .away-at-smaller {
+        display: none;
+    }
 }
 @media (max-width:349px) {
     .sticky-header li {
@@ -349,4 +386,14 @@ section.fun-facts .top-header2 {
     a.on-this-page {
         font-size: 10px;
     }
+    .in-at-smaller {
+        display: none;
+    }
+    .away-at-smaller {
+        display: none;
+    }
+    .top-header3 {
+        font-size: 50px;
+    }
+    
 }
