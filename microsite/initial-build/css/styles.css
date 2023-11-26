@@ -1,19 +1,19 @@
 section.page-title {
-    background-image:url(../images/background.png);
-    background-size:cover;
+    background-image:url(../images/AdobeStock_30135380.jpeg);
+    background-size:contain;
     background-repeat: no-repeat;
-    background-position: left;
     padding-top: 10%;
-    padding-left: 58%;
-    padding-bottom: 19%;
+    padding-left: 65%;
+    padding-bottom: 28%;
     font-weight: bold;
-    color:white;
+    color:#0A7ACF;
     font-size:83px;
     line-height:80%;
     margin:0%;
 }
 em {
     font-size: 32px;
+     color:#0A7ACF;
 }
 .sticky-header {
     position: sticky;
@@ -29,7 +29,7 @@ em {
     margin: 0;
     display: flex;
 }
-section.char-top ul {
+section.char-top ul, section.labrador-type-list ul, section.char-top ul.reversed {
     grid-gap: 0% 8%;
 }
 .sticky-header li {
@@ -56,7 +56,7 @@ a.on-this-page {
 }
 .rectangular-button {
     display: block;
-    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 0;
     border: none;
     font-weight: bold;
@@ -107,17 +107,24 @@ h1 {
     color:black;
     font-size:40px;
 }
-  section.home1 ul, section.history-top ul, section.char-top ul, section.fun-facts ul {
+  section.home1 ul, section.history-top ul, section.char-top ul, section.fun-facts ul, section.char-top ul.reversed {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     list-style: none;
 }
 section.labrador-type-list ul {
     display: grid;
-    grid-gap:2%;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
     list-style: none;
-    background-color: #B6CBDB;
+    background-color:#0A7ACF;
+}
+.lab-list, .lab-comparison, .main-page {
+    padding: 5%;
+    padding-bottom: 1%;
+    margin-left:0;
+}
+.reversed, .char {
+    padding: 4%;
 }
 section.home1 ul {
     font-size: 22px;
@@ -135,7 +142,8 @@ div.footer {
     background-color: black;
     color: white;
     font-size: 14px;
-    padding-left: 10%;
+    padding-left: 10%;    
+    padding-right: 10%;
     padding-top: 3%;
     padding-bottom:3%;
 }
@@ -145,7 +153,7 @@ div.footer {
     object-fit: cover;
     border-radius: 5px;
 }
-footer a:visited {
+.footer a:visited {
     color: white;
     text-decoration: none;
 }
@@ -165,16 +173,13 @@ header li {
 p.caption {
     font-size: 17px;
     font-weight: bold;
+    color:black;
+}
+p.white {
+    color:white;
 }
 p.intro-text {
     font-size:22px;
-    line-height: normal;
-    font-weight: normal;
-}
-section.history-2 {
-    background-color: #B6CBDB;
-    color: white;
-    font-size:23px;
     line-height: normal;
     font-weight: normal;
 }
@@ -196,7 +201,6 @@ section.fun-facts .top-header2 {
     font-size: 100px;
     text-align: left;
     margin: 1%;
-    padding-bottom: 2%;
 }
 .fact {
     border: 2px solid #B6CBDB;
@@ -236,12 +240,20 @@ section.fun-facts .top-header2 {
         width:120%;
     }
 }
+@media (max-width: 1200px) {
+    section.page-title {
+        font-size: 70px;
+    }
+    em {
+        font-size: 24px;
+    }
+}
 @media (max-width: 1000px) {
     section.page-title {
         font-size: 60px;
     }
     em {
-        font-size: 24px;
+        font-size: 22px;
     }
     .sticky-header li {
         font-size: 16px;
@@ -262,7 +274,7 @@ section.fun-facts .top-header2 {
         display: show;
     }
     .image-placeholder {
-        width: 140%;
+        width: 135%;
     }
 }
 @media (max-width: 752px) {
@@ -283,6 +295,28 @@ section.fun-facts .top-header2 {
     }
     .image-placeholder-tall {
         width:130%;
+    }
+    section.home1 ul{
+        gap:30px;
+     }
+     section.home1 ul {
+        display:contents;
+        grid-template-columns: none;
+    }
+    .image-placeholder.front-image {
+        width:80%;
+    }
+    .rectangular-button {
+         font-size: 16px;
+    }
+    section.char-top ul.reversed {
+        display: flex;
+        flex-direction: column-reverse;
+        list-style: none;
+    }
+    section.char-top ul.char {
+        display:contents;
+        grid-template-columns: none;
     }
 }
 @media (max-width: 648px) {
@@ -311,9 +345,6 @@ section.fun-facts .top-header2 {
     .top-header3 {
         font-size: 70px;
     }
-    .in-at-smaller {
-        display: show;
-    }
     .image-placeholder-tall {
         width:128%;
     }
@@ -335,9 +366,6 @@ section.fun-facts .top-header2 {
     a.on-this-page {
         font-size: 12px;
     }
-    .in-at-smaller {
-        display: none;
-    }
     .away-at-smaller {
         display: none;
     }
@@ -345,7 +373,17 @@ section.fun-facts .top-header2 {
         display:contents;
         grid-template-columns: none;
     }
-    
+    .char-top.title-fun-facts {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .rectangular-button {
+        font-size: 14px;
+   }
+    div.footer {
+        font-size: 12px;
+    }
 }
 @media (max-width: 450px) {
     section.page-title {
@@ -366,12 +404,6 @@ section.fun-facts .top-header2 {
     }
     .top-header3 {
         font-size: 60px;
-    }
-    .in-at-smaller {
-        display: none;
-    }
-    .away-at-smaller {
-        display: none;
     }
     .top-header3 {
         font-size: 55px;
@@ -406,6 +438,9 @@ section.fun-facts .top-header2 {
     .away-at-smaller {
         display: none;
     }
+    .rectangular-button {
+        font-size: 12px;
+   }
 }
 @media (max-width:349px) {
     .sticky-header li {
