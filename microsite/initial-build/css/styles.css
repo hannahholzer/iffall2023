@@ -29,6 +29,9 @@ em {
     margin: 0;
     display: flex;
 }
+section.char-top ul {
+    grid-gap: 0% 8%;
+}
 .sticky-header li {
     margin: 0 20px;
     font-size: 18px;
@@ -63,7 +66,7 @@ a.on-this-page {
 .rectangular-button a {
     display: block;
     padding: 18px;
-    background-color: #B6CBDB;
+    background-color: #0A7ACF;
     transition: transform 0.3s ease;
     border: none;
     border-radius: 5px;
@@ -128,19 +131,29 @@ section.home1 li, section.history-top li, section.labrador-type-list li, section
     text-align: left;
     padding: 4% 5%;
 }
-section.footer {
-    background-color: #B6CBDB;
-    color: black;
+div.footer {
+    background-color: black;
+    color: white;
     font-size: 14px;
     padding-left: 10%;
-    padding-top: 1.5%;
-    padding-bottom:1%;
+    padding-top: 3%;
+    padding-bottom:3%;
 }
 .image-placeholder {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+}
+footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+.image-placeholder-tall {
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
 }
 header li {
     display: flex;
@@ -207,7 +220,7 @@ section.fun-facts .top-header2 {
     margin: 0;
 }
 .top-header2::before {
-    content:"#" counter(my-counter) "   ";
+    content:"#" counter(my-counter) "  ";
     display: contents;
     width: 1.5em;
     text-align: center;
@@ -216,8 +229,11 @@ section.fun-facts .top-header2 {
     font-weight: bold;
 }
 @media (max-width:1700px) {
+    .image-placeholder-tall {
+        width:85%;
+    }
     .image-placeholder {
-        width:70%;
+        width:120%;
     }
 }
 @media (max-width: 1000px) {
@@ -245,6 +261,9 @@ section.fun-facts .top-header2 {
     .in-at-smaller {
         display: show;
     }
+    .image-placeholder {
+        width: 140%;
+    }
 }
 @media (max-width: 752px) {
     section.page-title {
@@ -262,8 +281,8 @@ section.fun-facts .top-header2 {
     .in-at-smaller {
         display: show;
     }
-    .image-placeholder {
-        width:105%;
+    .image-placeholder-tall {
+        width:130%;
     }
 }
 @media (max-width: 648px) {
@@ -295,8 +314,8 @@ section.fun-facts .top-header2 {
     .in-at-smaller {
         display: show;
     }
-    .image-placeholder {
-        width:110%;
+    .image-placeholder-tall {
+        width:128%;
     }
 }
 @media (max-width: 550px) {
@@ -322,6 +341,11 @@ section.fun-facts .top-header2 {
     .away-at-smaller {
         display: none;
     }
+    section.char-top ul {
+        display:contents;
+        grid-template-columns: none;
+    }
+    
 }
 @media (max-width: 450px) {
     section.page-title {
@@ -351,6 +375,9 @@ section.fun-facts .top-header2 {
     }
     .top-header3 {
         font-size: 55px;
+    }
+    p.top-header {
+        font-size: 40px;
     }
 }
 @media (max-width: 395px) {
@@ -397,5 +424,11 @@ section.fun-facts .top-header2 {
     .top-header3 {
         font-size: 50px;
     }
+    p.top-header {
+        font-size: 37px;
+    }
     
+}
+h1 {
+    color:#0A7ACF;
 }
