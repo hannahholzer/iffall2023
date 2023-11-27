@@ -6,14 +6,14 @@ section.page-title {
     padding-left: 65%;
     padding-bottom: 28%;
     font-weight: bold;
-    color:#0A7ACF;
+    color:black;
     font-size:83px;
     line-height:80%;
     margin:0%;
 }
 em {
     font-size: 32px;
-     color:#0A7ACF;
+     color:black;
 }
 .sticky-header {
     position: sticky;
@@ -223,6 +223,10 @@ section.fun-facts .top-header2 {
     counter-increment: my-counter;
     margin: 0;
 }
+hr.big-divider {
+    border-width: 45px; 
+    border-color: #0A7ACF;
+}
 .top-header2::before {
     content:"#" counter(my-counter) "  ";
     display: contents;
@@ -277,6 +281,24 @@ section.fun-facts .top-header2 {
         width: 135%;
     }
 }
+@media (max-width: 878px) {
+    section.char-top ul.char {
+        display:contents;
+        grid-template-columns: none;
+    }
+    .image-placeholder.front-image {
+        width:80%;
+    }
+section.home1 ul {
+    gap:10px;
+}
+section.home1 li.bottom-home {
+padding-top: 0%;
+}
+section.home1 li.top-home {
+    padding-bottom: 0%;
+}
+}
 @media (max-width: 752px) {
     section.page-title {
         font-size: 45px;
@@ -314,10 +336,6 @@ section.fun-facts .top-header2 {
         flex-direction: column-reverse;
         list-style: none;
     }
-    section.char-top ul.char {
-        display:contents;
-        grid-template-columns: none;
-    }
 }
 @media (max-width: 648px) {
     section.page-title {
@@ -340,7 +358,7 @@ section.fun-facts .top-header2 {
         font-size: 45px;
     }
     p.intro-text {
-        font-size: 18px;
+        font-size: 14px;
     }
     .top-header3 {
         font-size: 70px;
