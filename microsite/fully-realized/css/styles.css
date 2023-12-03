@@ -36,7 +36,6 @@ section.char-top ul, section.labrador-type-list ul, section.char-top ul.reversed
     margin: 0 20px;
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: bold;
 }
 .sticky-header a {
     text-decoration: none;
@@ -47,8 +46,9 @@ section.char-top ul, section.labrador-type-list ul, section.char-top ul.reversed
     color:white;
 }
 a.on-this-page {
-    color: #B6CBDB;
-    font-size: 20px;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 19px;
 }
 .paw-header {
     width:50px; 
@@ -159,6 +159,37 @@ div.footer {
 .footer a:visited {
     color: white;
     text-decoration: none;
+    text-transform: none;
+}
+header a {
+    position: relative;
+    text-decoration: none;
+    color: #0A7ACF;
+}
+section.char-top.title-fun-facts {
+    padding-top: 7%;
+}
+.lab-comparison {
+    padding-top: 3%;
+}
+section.labrador-type-list {
+    padding-bottom: 6%;
+}
+header a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0A7ACF; 
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 .image-placeholder-tall {
     height: auto;
@@ -212,6 +243,7 @@ section.fun-facts .top-header2 {
     padding: 2% 8%;
     margin-bottom: 5%;
 }
+
 .fun-facts {
     display: flex;
     justify-content: flex-start;
@@ -351,6 +383,22 @@ section.home1 li.top-home {
     hr.big-divider {
         border-width: 35px; 
         border-color: #0A7ACF;
+    } 
+    .intro-text.labrador {
+        padding-bottom: 17%;
+    }
+    .sticky-header ul {
+        display: block;
+        justify-content: right;
+    }
+     .sticky-header li {
+        display: block;
+            font-size: 12px;
+            margin: 2px 20px;
+        text-align: left;
+    }
+    .paw-header {
+        display: none;
     }
 }
 @media (max-width: 648px) {
@@ -362,10 +410,6 @@ section.home1 li.top-home {
     }
     em {
         font-size: 18px;
-    }
-    .sticky-header li {
-        font-size: 12px;
-        margin: 0 15px;
     }
     a.on-this-page {
         font-size: 14px;
@@ -404,7 +448,7 @@ section.home1 li.top-home {
         display:contents;
         grid-template-columns: none;
     }
-    .char-top.title-fun-facts {
+    section.char-top.title-fun-facts {
         display: flex;
         justify-content: center;
         align-items: center; 
