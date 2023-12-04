@@ -11,6 +11,63 @@ section.page-title {
     line-height:80%;
     margin:0%;
 }
+/* This "drawer" is my main container. In it there is a button to control it, and the contents which open and close */
+drawer {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+}
+/* This is the button element, with the class "controls" that users will click on in order to open and close the contents */
+#drawer button.controls {			
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+/* This is what the button.controls element looks like when its parent, #drawer, has the .open class applied to it */
+#drawer.open button.controls {		
+    background-color:#0A7ACF;
+    color:white;
+}
+/* This :after pseudoelement is actually what adds the words "open +" to the button. You'll notice that the only contents in the button HTML are the FontAwesome hamburger icon */
+#drawer button.controls:after {			
+    content: "open +";
+    font-family: Helvetica;
+    font-size: 10px;
+}
+/* When the parent #drawer element has the .open class applied, we change the button :after pseudoelement text from "open +" to "close -" */
+#drawer.open button.controls:after {	
+    content: "close -";
+}
+
+/* Here we are just positioning the FontAwesome hamburger icon */
+#drawer button.controls .fa {			
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+/* This .contents element is what opens and closes when the user clicks the button. It has 0 height (and padding) when it's in its normally closed state */
+#drawer .contents {						
+    height: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    transition: all .5s;
+}
+/* When the parent #drawer element has the .open class applied, we change the height and padding of the contents to reveal it. */
+#drawer.open .contents {				
+    height: 8%;
+    padding: 4%;
+}
 em {
     font-size: 32px;
      color:black;
