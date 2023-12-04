@@ -24,7 +24,7 @@ drawer {
     position: sticky;
     right: 0;
     bottom: 0;
-    height: 30px;
+    height: 50px;
     width: 100%;
     background-color: black;
     color:white;
@@ -37,21 +37,20 @@ drawer {
 }
 /* This :after pseudoelement is actually what adds the words "open +" to the button. You'll notice that the only contents in the button HTML are the FontAwesome hamburger icon */
 #drawer button.controls:after {			
-    content: "open +";
+    content: "OPEN +";
     font-family: Helvetica;
-    font-size: 10px;
+    font-size: 16px;
 }
 /* When the parent #drawer element has the .open class applied, we change the button :after pseudoelement text from "open +" to "close -" */
 #drawer.open button.controls:after {	
-    content: "close -";
+    content: "CLOSE -";
 }
-
 /* Here we are just positioning the FontAwesome hamburger icon */
 #drawer button.controls .fa {			
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 5px;
+    left: 2%;
 }
 /* This .contents element is what opens and closes when the user clicks the button. It has 0 height (and padding) when it's in its normally closed state */
 #drawer .contents {						
@@ -61,12 +60,14 @@ drawer {
     width: 100%;
     background-color: black;
     color: #fff;
-    transition: all .5s;
+    display: none;
 }
 /* When the parent #drawer element has the .open class applied, we change the height and padding of the contents to reveal it. */
 #drawer.open .contents {				
+    transition: all .5s;
     height: 8%;
     padding: 4%;
+    display:block;
 }
 em {
     font-size: 32px;
@@ -444,19 +445,6 @@ section.home1 li.top-home {
     .intro-text.labrador {
         padding-bottom: 17%;
     }
-    .sticky-header ul {
-        display: block;
-        justify-content: right;
-    }
-     .sticky-header li {
-        display: block;
-            font-size: 12px;
-            margin: 2px 20px;
-        text-align: left;
-    }
-    .paw-header {
-        display: none;
-    }
 }
 @media (max-width: 648px) {
     section.page-title {
@@ -480,6 +468,10 @@ section.home1 li.top-home {
     .top-header3 {
         font-size: 70px;
     }
+    .sticky-header li {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
 }
 @media (max-width: 550px) {
     section.page-title {
@@ -490,10 +482,6 @@ section.home1 li.top-home {
     }
     em {
         font-size: 14px;
-    }
-    .sticky-header li {
-        font-size: 10px;
-        margin: 0 15px;
     }
     a.on-this-page {
         font-size: 12px;
@@ -536,10 +524,6 @@ section.home1 li.top-home {
     }
     em {
         font-size: 12px;
-    }
-    .sticky-header li {
-        font-size: 10px;
-        margin: 0 12px;
     }
     a.on-this-page {
         font-size: 12px;
@@ -595,10 +579,6 @@ section.home1 li.top-home {
 }
 }
 @media (max-width:349px) {
-    .sticky-header li {
-        font-size: 8px;
-        margin: 0 9px;
-    }
     a.on-this-page {
         font-size: 10px;
     }
